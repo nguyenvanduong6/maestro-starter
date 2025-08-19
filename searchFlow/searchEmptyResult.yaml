@@ -1,0 +1,12 @@
+# flow_contacts_android.yaml
+
+appId: example.app.dev
+---
+- launchApp: "example.app.dev"
+#- tapOn: "店舗で受取・予約注文"
+- tapOn: "ウェブで注文、店舗で受け取り"
+- tapOn: "店舗を検索"
+- inputText: "Da Nang"
+- tapOn: "検索"
+- assertVisible: "条件を変更して検索してみましょう\n検索条件に当てはまるお店が見つかりませんでした。"
+- stopApp: "example.app.dev"
